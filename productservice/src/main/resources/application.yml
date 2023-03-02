@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://tharun:tharun46@shoppingapp.vnx10bj.mongodb.net/?retryWrites=true&w=majority
+      database: ShoppingProducts

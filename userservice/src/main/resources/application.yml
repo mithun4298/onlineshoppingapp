@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://Mithun9546:kFx6ff2RnvWwXoYw@onlineshopping.pwbgd5g.mongodb.net/?retryWrites=true&w=majority
+      database: shoppingUsers
