@@ -41,6 +41,9 @@ public class LoginServiceImpl implements LoginService {
         if (repoCustomerList.isPresent()) {
             Customer repoCustomer = repoCustomerList.get();
             if (repoCustomer.getPassword().equals(customerData.getPassword())) {
+               if("admin@product.com".equals(customerData.getEmail())){
+                   repoCustomer.setAdmin(true);
+               }
                 return repoCustomer;
             } else {
                 throw new Exception("Password is incorrect");
